@@ -1,5 +1,14 @@
 
 Check IRR radb database
+
+# Checar IRR
 whois -h whois.radb.net MAINT-AS22548
+
+# Checar IRR
 whois -h whois.radb.net -i mnt-by MAINT-AS22548
-whois -h whois.radb.net 8.8.8.8
+
+# Checar rota no RADB
+whois -h whois.radb.net 8.8.8.8/24
+
+# Checar ROA
+whois -h whois.bgpmon.net " --roa 22548 200.160.0.0/22"
